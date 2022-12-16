@@ -15,23 +15,17 @@ export default class InputField extends HTMLElement {
         switch (e.type) {
           
           case "mouseup":
-                this.isDragging = false;
-                //container
-                let f = document.querySelector(".input-container");
-                //input
+    
                 let i = document.querySelector(".input-form");
-                //label
                 let l = document.querySelector(".label-form");
 
-                f.style.borderColor = "#fbe776"; 
-                f.style.display = "block";
+                i.style.borderColor = "#fbe776";
 
-                l.style.transform = "translateY(5px)";
+                l.style.transform = "translateY(-22px)";
                 l.style.transitionDuration = "500ms";
                 l.style.color = "#81909b";
                 l.style.display = "block";
 
-                i.style.display = "block";
                 break;
         }
      
